@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:6px;
+  padding: 25px 30px 40px 10px;
+}
+.header-icons{
+  color: rgb(12, 11, 11);
+  gap: 8px;
+}
+.header-icons .back-circle,.left-header .menu{
+  background-color: white;
+}
+.left-header ,.flex{
+  display: flex;
+  align-items: center;
+}
+.left-header img{
+  width: 90px;
+  margin-left: 15px;
+}
+.nav-bar i{
+  padding: 0 17px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.search-header form{
+  border: 1px solid rgb(189, 181, 181);
+  height: 39px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-radius: 50px;
+}
+.search-header input{
+  border-radius: 50px 0 0 50px;
+  font-size: 15px;
+  width: 500px;
+  padding: 15px;
+  border: none;
+}
+.search-header button{
+  border-radius:0 50px 50px 0;
+  border: none;
+}
+.search-header .back-circle{
+  margin-left: 20px;
+}
+                                              /* sidebar css */      
+.sidebar{
+  width: 220px;
+  max-height: calc(100vh - 98px);
+  padding: 0 4px 20px 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar::-webkit-scrollbar{
+  width: 7px;
+}
+.sidebar::-webkit-scrollbar-track{
+  background-color: white;
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background: rgb(125, 139, 139);
+}
+.sidebar-category{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 20px;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+hr{
+  margin: 13px 0 13px;
+  background-color: rgb(218, 223, 221);
+}
+                              /* about section */
+.about a{
+  padding-right: 7px;
+  text-decoration: none;
+  color: rgb(88, 85, 85);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.about{
+  padding: 6px 6px 0 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .first,.sec{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1px;
+}
+.about .last span{
+  font-size: 0.7rem;
+  margin-right: 4px;
+} 
+                                           /* utility */
+.hover:hover{
+  background-color: rgb(238, 241, 240);
+}
+.back-circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background-color: rgb(241, 243, 242);
+  justify-content: center;
+}
+.back-circle:hover{
+  background-color: rgb(222, 228, 225);
+}
+/* mainbody */
+.mainbody{
+  display: flex;
+}
+.topics-bar{
+  height: 27px;
+  max-width: 78.4vw;
+  display: flex;
+  padding-left:5px;
+  margin: 0 0 10px 20px;
+  gap: 12px;
+  overflow-x: scroll;
+}
+.topics-bar button{
+  background-color: rgb(241, 243, 242);
+  border: 0;
+  padding: 5px 15px 10px;
+  border-radius: 8px;
+  text-wrap: nowrap;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.topics-bar button:hover{
+  background-color: rgb(222, 228, 225);
+}
+.topics-bar button:active{
+  background-color: rgb(16, 17, 16);
+  color: white;
+}
+.topics-bar::-webkit-scrollbar{
+  display: none;
+}
+                                                /* videos */
+.videos{
+  height: 503px;
+  max-width: 1079px;
+  display: flex;
+  padding: 15px 28px;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.video{
+  height: 342px;
+  width: 342px;
+  padding: 2px 2px 20px 2px;
+}
+.video .vid-part img{
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px 0;
+  position: relative;
+}
+.vid-part{
+  position: relative;
+}
+.video .title-part{
+  display: flex;
+}
+.video .title-part img{
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+.video .title-part span{
+  position: relative;
+  bottom: 5px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.time-box{
+  background-color: rgba(0, 0, 0, 0.384);
+  padding: 0.1px 5px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+  bottom: 32px;
+}
+.channel-details{
+  font-size: 13px;
+  color: rgb(91, 95, 94);
+  font-weight: 500;
+  padding: 6px 0 0 49px;
+  position: relative;
+}
+.channel-details:nth-child(2){
+  margin-right: 10px;
+}
+.trd{
+  margin-left: 20px;
+}
+.trd::before{
+  content:'';
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: rgb(83, 80, 80);
+  position: absolute;
+  bottom: 7px;
+  left: 124px;
+}
